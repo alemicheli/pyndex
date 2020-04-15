@@ -23,8 +23,12 @@ pip install pandas
 
 ## License
 The software is distributed under GNU General Public License v3.0.
+
 ## Documentation
 The official documentation is hosted on readthedocs link.
 ## Getting Help
+For any usage or installation questions, please get in touch with Alessandro Micheli at
+am1118@ic.ac.uk .
+
 
 
