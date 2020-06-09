@@ -13,12 +13,12 @@ Binary installers for the latest released version are available at the Python pa
 
 ```bash
 # conda
-conda install pandas
+conda install pyndex
 ```
 
 ```bash
 # or PyPI
-pip install pandas
+pip install pyndex
 ```
 
 ## License
