@@ -29,14 +29,14 @@ The software is distributed under GNU General Public License v3.0.
 The package can reconstruct the Russell 1000, 2000 and 3000 index. The index to be reconstructed is passed via the argument **index** as **"1000"**, **"2000"** and **"3000"**, respectively. The oldest year supported is 1989. 
 
 First, start your connection to the WRDS database. 
-```bash
+```python
 >>> import wrds
 >>> db = wrds.Connection()
 Loading library list...
 Done
 ```
 Then pass your WRDS connection to the package along with the parameters year and index.
-```bash
+```python
 >>> import pyndex as px
 >>> index = px.Index.from_wrds(db, year = 2010, index = "3000")
 >>> calendar = px.Index.get_calendar(year = 2010)
@@ -46,7 +46,7 @@ The method **px.Index.get_calendar()** will return the index reconstruction cale
 
 One can join a sequence of year in a single DataFrame using **px.join**.
 
-```bash
+```python
 >>> index_2010 = px.Index.from_wrds(db, year = 2010, index = "3000")
 >>> index_2011 = px.Index.from_wrds(db, year = 2011, index = "3000")
 >>> new_index = px.join([index_2010,index_2011])
@@ -54,7 +54,7 @@ One can join a sequence of year in a single DataFrame using **px.join**.
 
 To check the difference of index constituents between two points in time you can use **px.diff** as follows,
 
-```bash
+```python
 >>> index_2010 = px.Index.from_wrds(db, year = 2010, index = "3000")
 >>> slice_1 = index_2010["2010-08-20","2010-08-20"]
 >>> slice_2 = index_2010["2010-09-20","2010-09-20"]
@@ -66,7 +66,7 @@ This is particularly useful if one has to find the index addition between two in
 
 In this case one would use px.diff as follows.
 
-```bash 
+```python 
 >>> index_2010 = px.Index.from_wrds(db, year = 2010, index = "3000")
 >>> calendar_2010 = px.Index.get_calendar(2010)
 >>> annual_rebalance = index_2010[calendar_2010["Annual Rebalance Day"]:calendar_2010["Annual Rebalance Day"]]
