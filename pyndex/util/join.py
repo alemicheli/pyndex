@@ -1,4 +1,4 @@
-import _decorator as dec
+import pyndex.util._decorator as dec
 import pandas as pd
 
 
