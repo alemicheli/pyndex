@@ -6,6 +6,10 @@ pyndex is a Python package developed to reconstruct the Russell US indexes. It i
 ## Main features
 Here are the main features of pyndex:
 
+1) Reconstruction of Russell U.S. indexes to great accuracy
+2) Point in time control of index constituents
+3) Calendar for Index reconstruction for each year from 1989
+
 ## Where to get it
 The source code is currently hosted in the following GitHub repository folder: 
 
