@@ -13,17 +13,20 @@ Here are the main features of pyndex:
 ## Where to get it
 The source code is currently hosted in the following GitHub repository folder: 
 
-Binary installers for the latest released version are available at the Python package index and on conda.
-
-```bash
-# conda
-conda install pyndex
-```
+Binary installers for the latest released version are available at the Python package index.
+To install type on your terminal:
 
 ```bash
 # or PyPI
 pip install pyndex
 ```
+
+## Citation
+Please use following citation to cite pyndex in scientific publications:
+
+Bibtex entry:
+
+
 
 ## License
 The software is distributed under GNU General Public License v3.0.
@@ -72,9 +75,8 @@ In this case one would use px.diff as follows.
 
 ```python 
 >>> index_2010 = px.Index.from_wrds(db, year = 2010, index = "3000")
->>> calendar_2010 = px.Index.get_calendar(2010)
->>> annual_rebalance = index_2010[calendar_2010["Annual Rebalance Day"]:calendar_2010["Annual Rebalance Day"]]
->>> q3_rebalance = index_2010[calendar_2010["Q3 Rebalance Day"]:calendar_2010["Q3 Rebalance Day"]]
+>>> annual_rebalance = index_2010["2010-06-25":"2010-06-25"]
+>>> q3_rebalance = index_2010["2010-09-17":"2010-09-17"]
 >>> additions, deletions = px.diff(annual_rebalance, q3_rebalance)
 ```
 
