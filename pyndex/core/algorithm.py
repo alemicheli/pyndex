@@ -1,6 +1,6 @@
 import sys
 sys.path.append("../util")
-import _decorator as dec
+import pyndex.util._decorator as dec
 import calendar
 import datetime as dt
 import pandas as pd

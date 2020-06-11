@@ -1,7 +1,5 @@
-import sys
-sys.path.append("../util")
-import _decorator as dec
-import algorithm as alg
+import pyndex.util._decorator as dec
+import pyndex.core.algorithm as alg
 import wrds
 import pandas as pd
 
