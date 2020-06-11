@@ -1,0 +1,18 @@
+certifi==2020.4.5.2
+jplephem==2.14
+lunardate==0.2.0
+mock==4.0.2
+numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1591485228204/work
+pandas @ file:///Users/runner/miniforge3/conda-bld/pandas_1590752959603/work
+psycopg2-binary==2.8.5
+pyCalverter==1.6.1
+pyluach @ file:///home/conda/feedstock_root/build_artifacts/pyluach_1591271472951/work
+python-dateutil==2.8.1
+pytz==2020.1
+sgp4 @ file:///home/conda/feedstock_root/build_artifacts/sgp4_1590240126314/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
+skyfield @ file:///home/conda/feedstock_root/build_artifacts/skyfield_1591631936482/work
+skyfield-data @ file:///home/conda/feedstock_root/build_artifacts/skyfield-data_1590001344225/work
+SQLAlchemy==1.3.17
+workalendar @ file:///home/conda/feedstock_root/build_artifacts/workalendar_1591387812608/work
+wrds==3.0.8
