@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="pyndex",  
+    name="pyndex-fin",  
     version="0.1",
     author="Alessandro Micheli",
     author_email="am1118@imperial.ac.uk",
