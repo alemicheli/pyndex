@@ -17,5 +17,8 @@ setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
     ],
+    install_requires=[
+   'pandas>=1.0.4',
+   'wrds>=3.0.8'],
     python_requires='>=3.6',
 )
