@@ -19,6 +19,7 @@ setup(
     ],
     install_requires=[
    'pandas>=1.0.4',
-   'wrds>=3.0.8'],
+   'wrds>=3.0.8',
+   'workalendar'],
     python_requires='>=3.6',
 )
