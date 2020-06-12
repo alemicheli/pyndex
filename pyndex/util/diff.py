@@ -1,5 +1,21 @@
 import pyndex.util._decorator as dec
 import pandas as pd
+import warnings
+
+
+def _single_slice_warning(before, after):
+    before_len = len(before.index)
+    after_len = len(after.index)
+    if (before_len != 1):
+        warnings.warn(f'''First argument DataFrame has {before_len}
+                        rows, different from 1.
+                        Function supported with 1 row.
+                        ''')
+    if (after_len != 1):
+        warnings.warn(f'''Second argument DataFrame has {after_len}
+                        rows, different from 1.
+                        Function supported with 1 row.
+                        ''')
 
 
 @dec.typeassert(before=pd.core.frame.DataFrame,
@@ -8,8 +24,8 @@ def diff(before, after):
     """Find difference in constituents between two indexes.
 
     Args:
-        before (pandas.core.DataFrame): First Index 
-        after (pandas.core.DataFrame): Second Index 
+        before (pandas.core.DataFrame): First Index
+        after (pandas.core.DataFrame): Second Index
 
     Returns:
         pandas.core.DataFrame: Two pandas DataFrame containing additions
@@ -23,6 +39,7 @@ def diff(before, after):
 
     Intended to find additions and deletions between two events/dates.
     """
+    _single_slice_warning(before, after)
     active_before = before[(before > 0)].dropna(axis=1).columns
     active_after = after[(after > 0)].dropna(axis=1).columns
     deletions = active_before.drop(
