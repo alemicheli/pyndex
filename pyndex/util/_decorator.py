@@ -64,7 +64,7 @@ def supported(*supp_args, **supp_kwargs):
             for name, value in bound_values.arguments.items():
                 if name in supported_val:
                     if not (value in supported_val[name]):
-                        raise TypeError(
+                        raise ValueError(
                             'Argument {} must be among {}'.format(
                                 name, supported_val[name])
                         )
