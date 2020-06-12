@@ -17,8 +17,8 @@ Binary installers for the latest released version are available at the Python pa
 To install type on your terminal:
 
 ```bash
-# or PyPI
-pip install pyndex
+# PyPI
+pip install pyndex-fin
 ```
 
 ## Citation
