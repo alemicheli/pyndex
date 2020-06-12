@@ -1,12 +1,21 @@
+attrs==19.3.0
 certifi==2020.4.5.2
 jplephem==2.14
 lunardate==0.2.0
 mock==4.0.2
+more-itertools @ file:///home/conda/feedstock_root/build_artifacts/more-itertools_1591167413021/work
 numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1591485228204/work
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1589925210001/work
 pandas @ file:///Users/runner/miniforge3/conda-bld/pandas_1590752959603/work
+pluggy @ file:///Users/runner/miniforge3/conda-bld/pluggy_1588623615342/work
 psycopg2-binary==2.8.5
+py==1.8.1
 pyCalverter==1.6.1
 pyluach @ file:///home/conda/feedstock_root/build_artifacts/pyluach_1591271472951/work
+# Editable install with no version control (pyndex==0.0.1)
+-e /Users/alessandro/anaconda3/envs/pyndex_env/lib/python3.8/site-packages
+pyparsing==2.4.7
+pytest==5.4.3
 python-dateutil==2.8.1
 pytz==2020.1
 sgp4 @ file:///home/conda/feedstock_root/build_artifacts/sgp4_1590240126314/work
@@ -14,5 +23,6 @@ six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
 skyfield @ file:///home/conda/feedstock_root/build_artifacts/skyfield_1591631936482/work
 skyfield-data @ file:///home/conda/feedstock_root/build_artifacts/skyfield-data_1590001344225/work
 SQLAlchemy==1.3.17
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1591600393557/work
 workalendar @ file:///home/conda/feedstock_root/build_artifacts/workalendar_1591387812608/work
 wrds==3.0.8
