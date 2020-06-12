@@ -1,0 +1,1 @@
+pytest  pyndex/tests/test_*
