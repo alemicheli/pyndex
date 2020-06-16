@@ -1,7 +1,9 @@
 # pyndex: the python reconstructor for the FTSE Russell US indexes.
 
 ## What is it?
-pyndex is a Python package developed to reconstruct the Russell US indexes. It is based on the results of the following paper:
+pyndex is a Python package developed to reconstruct the Russell US indexes. It is based on the results of the paper:
+
+[Evidence of Crowding on Russell 3000 Reconstitution Events](https://arxiv.org/abs/2006.07456)
 
 ## Main features
 Here are the main features of pyndex:
@@ -26,7 +28,14 @@ Please use following citation to cite pyndex in scientific publications:
 
 Bibtex entry:
 
-
+@misc{aless2020evidence,
+    title={Evidence of Crowding on Russell 3000 Reconstitution Events},
+    author={Alessandro Micheli and Eyal Neuman},
+    year={2020},
+    eprint={2006.07456},
+    archivePrefix={arXiv},
+    primaryClass={q-fin.TR}
+}
 
 ## License
 The software is distributed under GNU General Public License v3.0.
