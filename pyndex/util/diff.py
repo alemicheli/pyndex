@@ -18,17 +18,17 @@ def _single_slice_warning(before, after):
                         ''')
 
 
-@dec.typeassert(before=pd.core.frame.DataFrame,
-                after=pd.core.frame.DataFrame)
+@dec.typeassert(before=pd.DataFrame,
+                after=pd.DataFrame)
 def diff(before, after):
     """Find difference in constituents between two indexes.
 
     Args:
-        before (pandas.core.DataFrame): First Index
-        after (pandas.core.DataFrame): Second Index
+        before (pandas.DataFrame): First Index
+        after (pandas.DataFrame): Second Index
 
     Returns:
-        pandas.core.DataFrame: Two pandas DataFrame containing additions
+        pandas.DataFrame: Two pandas DataFrame containing additions
         and deletions.
 
     Example:
