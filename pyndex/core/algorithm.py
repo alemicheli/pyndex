@@ -225,13 +225,15 @@ def _beautify_table(table, calendar, year):
 
 
 def _reindex_with_bday(weights_table, trading_days, calendar, year):
-    last_bday = _get_calendar(year+1)["Annual Rebalance Day"] - BDay(1)
+    last_bday = _get_calendar(year+1)["Annual Rebalance Day"]
+    weights_table.index = weights_table.index + BDay(1)
     trading_days = pd.to_datetime(trading_days)
-    index_from_rebalance = trading_days[trading_days.date >=
+    index_from_rebalance = trading_days[trading_days.date >
                                         calendar["Annual Rebalance Day"]]
     new_index = index_from_rebalance.append(
-        pd.bdate_range(trading_days[-1], last_bday))
-    return weights_table.reindex(new_index).fillna(method="ffill").fillna(0)
+        pd.bdate_range(trading_days[-1]+ BDay(1), last_bday))
+    weights_table = weights_table.reindex(new_index).fillna(method="ffill").fillna(0)
+    return weights_table[weights_table.index > pd.to_datetime(calendar["Annual Rebalance Day"])]
 
 
 def _build(stock, year, index, metadata):
