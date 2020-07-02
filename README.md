@@ -95,4 +95,6 @@ For any usage or installation questions, please get in touch with Alessandro Mic
 am1118@ic.ac.uk .
 
 
+## Changelog
 
+**2-Jul-2020** : Debugged duplicated dates in Index time series.
