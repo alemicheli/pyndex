@@ -9,7 +9,7 @@ packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_15899252
 pandas @ file:///Users/runner/miniforge3/conda-bld/pandas_1590752959603/work
 pluggy @ file:///Users/runner/miniforge3/conda-bld/pluggy_1588623615342/work
 psycopg2-binary==2.8.5
-py==1.8.1
+py==1.10.0
 pyCalverter==1.6.1
 pyluach @ file:///home/conda/feedstock_root/build_artifacts/pyluach_1591271472951/work
 # Editable install with no version control (pyndex==0.0.1)
