@@ -1,5 +1,5 @@
 attrs==19.3.0
-certifi==2020.4.5.2
+certifi==2022.12.7
 jplephem==2.14
 lunardate==0.2.0
 mock==4.0.2
